@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toyota</title>
+
+    
+    
+
+    <style>
+    
+    .pad{
+        padding-top: 20px;
+    }
+    
+    </style>
+</head>
+<body style="background-color: #8DC3C4">
+    <div style="padding-left: 20px; margin:18%;background-color:#7486ED;width: 750px; border-radius: 20px "  >
+        <div class="" style="width:350px">
+            <div class="yes pad" style="height: 100px">
+                    
+                        
+                            <form onsubmit="return validate()" action="authet" method="POST">
+                                    <fieldset>
+                                            <legend><strong>Customer Information</strong> </legend>
+                                            <table>
+                                            <tr>
+
+                                                    <td><label for="customerid">Customer ID:</label></td>
+                                                    <td><input style="width: 100px" name="customername" id="custId" type="text" autofocus ></td>
+                                                </tr>
+                                                <tr>
+                                                        <td><label for="name">Name:</label></td>
+                                                        <td><input type="text" id="named" name="named" style="width: 204px" ></td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td><label for="state">State:</label></td>
+                                                            <td><select id="State" name="State" size="0" >            
+                                                                <option value=""></option>
+                                                                
+                                                                  <option value="KLA">KLA</option>
+                                                                  <option value="EBB">EBB</option>
+                                                                  <option value="MBR">MBR</option>
+                                                                  <option value="Other">Other</option>
+                                                                </select>
+                                                                <input type="checkbox" checked name="retail" id="retail">Retail Customer
+                                                            </td>
+                                                        </tr>
+                                    
+                                                    </table>
+                                            
+                                          </fieldset>
+                            
+                
+                                
+                        
+
+            </div>   
+           
+                    <div class="pad" >  
+                            <fieldset >
+                                    <legend><strong>Part Ordered</strong> </legend>
+                                    <table>
+                                            <tr>
+                                                <td><label for="customerid">Part Number:</label></td>
+                                                <td><input type="number" id="Partno" name="partno" style="width: 204px"></td>
+                                            </tr>
+                                            <tr>
+                                                    <td><label for="name">Description:</label></td>
+                                                    <td><input type="text" id="desc" name="descri" style="width: 204px"></td>
+                                                </tr>
+                                                <tr>
+                                                        <td><label for="state">Price per part:</label></td>
+                                                        <td><input style="width: 80px" name="ppp" type="number" id="price">
+                                                            <label for="Quantity">Quantity:</label>
+                                                            <input style="width: 50px" type="number" name="qtynamed" id="qty">
+                                                        </td>
+                            
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td><input type="checkbox" name="over" id="oversize">Oversize Cointainer</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><button type="submit" >Compute</button></td>
+                                                        <td><button type="reset">New Order</button></td>
+                                                    </tr>
+                                
+                                
+                                        </table>
+        
+                                   
+                                  </fieldset>    
+                            
+                    </div>
+                    
+
+        </div>
+        <div class="" style="width: 350px;margin-top: -302px;margin-left: 372px">
+           <div class="pad" style="height: 100px;">
+                <fieldset style="height: 100px">
+                        <legend><strong>Shopping</strong> </legend>
+                        <table>
+                                <tr>
+                                    <td><input type="radio" checked name="first" id="" value="UPS">UPS</td> 
+                                    <td><input type="radio" name="first" id="" value="FEDG">Fed Ex Ground</td> 
+                                </tr>
+                                <tr >
+                                      <td><input type="radio" name="first" id="" value="US">US Postal Air</td>  
+                                      <td><input type="radio" name="first" id="" value="FEDA">Fed Ex Air</td>  
+                                    </tr>
+                
+                            </table>
+                       
+                      </fieldset>
+                
+
+           </div>
+            
+            <div class="pad">
+                    <fieldset >
+                            <legend><strong>Output</strong> </legend>
+
+                            <table>
+                                    <tr>
+                                        <td><label for="">Cost</label></td>
+                                        <td><input type="text" name=""disabled  id="costvalue"></td>
+                                    </tr>
+                                    <tr>
+                                            <td><label for="">Sales Tax</label></td>
+                                            <td><input type="text" name="" disabled id="salesvalue"></td>
+                                        </tr>
+                                        <tr>
+                                                <td><label for="">Shipping & Handling</label></td>
+                                                <td><input type="text" name="" disabled id="Shippingvalue"></td>
+                                            </tr>
+                                            <tr>
+                                                    <td><label for="">Total</label></td>
+                                                    <td><input type="text" disabled name="totaled" id="Totalvalue"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><button style="float: right"  onclick="closewindow()" >Exit</button> </td>
+                                                </tr>
+                    
+                                </table>
+                           
+                          </fieldset>
+                    
+            
+
+                    </form>
+            </div>
+            
+        </div>
+        
+
+
+       
+    </div>
+    <script src="toyota.js"></script>
+</body>
+</html>
